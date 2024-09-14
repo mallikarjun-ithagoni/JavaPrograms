@@ -28,12 +28,12 @@ public class ExploreNumberFormat {
 		
 		//currency format for india is not set in number format class
 		@SuppressWarnings("deprecation")
-		NumberFormat nf2 = NumberFormat.getCurrencyInstance(new Locale("en","in"));
+		NumberFormat nf2 = NumberFormat.getCurrencyInstance(new Locale("en","IN"));
 		System.out.println(nf2.getCurrency()); // INR
 		System.out.println(nf2.getCurrency().getDisplayName()); // Indian Rupee
 		String s = nf2.format(salary);
 		System.out.println(s);
-		System.out.println("After new conversion");
+		//System.out.println("After new conversion");
 		//System.out.println(getIndianCurrency(s));
 	}
 
