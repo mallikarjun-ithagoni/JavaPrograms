@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print greeting message
-        run: echo "Hello world !!!"
+        run: | 
+               echo "Hello world !!!"
+               echo "Multiline run command"
       - name: Print goodbye
         run: echo "Done - bye!!!"
